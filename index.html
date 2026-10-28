@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mohammad Hossein</title>
+
+    <style>
+    body::before {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    top: -150px;
+    left: -150px;
+    filter: blur(60px);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 120, 255, 0.25);
+    border-radius: 50%;
+    bottom: -150px;
+    right: -150px;
+    filter: blur(60px);
+}
+
+ body {
+    background: #87CEEB;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    animation: fadeIn 1.5s ease;
+}
+
+body::before {
+    animation: moveLight 6s ease-in-out infinite alternate;
+}
+
+body::after {
+    animation: moveLight 8s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes moveLight {
+    from {
+        transform: translate(0, 0);
+    }
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 70px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    a {
+        padding: 13px 22px;
+        font-size: 15px;
+    }
+}
+
+    to {
+        transform: translate(80px, 50px);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+    h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    color: #102a43;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+       p {
+    font-size: 20px;
+    color: #888888;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+  a {
+    display: inline-block;
+    background: #111111;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 8px;
+    border: 1px solid #333333;
+    border-radius: 15px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>Mohammad Hossein</h1>
+
+    <p>Welcome to my website</p>
+
+    <div class="buttons">
+        <a href="https://instagram.com/mirzadeh739">Instagram</a>
+        <a href="https://t.me/MMDHoss1">Telegram</a>
+    </div>
+
+<p class="footer-text">Thanks for visiting</p>
+
+</body>
+</html>
